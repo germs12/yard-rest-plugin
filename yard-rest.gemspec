@@ -40,6 +40,7 @@ Gem::Specification.new do |s|
     "templates/default/method_details/html/header.erb",
     "templates/default/method_details/html/method_url.erb",
     "templates/default/method_details/html/setup.rb",
+    "templates/default/tags/html/caller.erb",
     "templates/default/tags/html/example_request.erb",
     "templates/default/tags/html/example_response.erb",
     "templates/default/tags/html/generic_tag.erb",
@@ -63,6 +64,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<yard>, ["~> 0.8.1"])
+    s.add_dependency('pry')
   end
 end
 

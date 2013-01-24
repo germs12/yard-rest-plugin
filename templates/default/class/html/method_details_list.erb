@@ -21,6 +21,20 @@
 					</div>
 				<% end %>
 
+				<% if meth.tags(:features).size > 0 %>
+					<div>
+						<h4>Sites</h4>
+						<% meth.tags(:features).each do |feature| %>
+							<ul>
+								<li>
+									<%= feature.text %>
+								</li>
+							</ul>
+						<% end %>
+						</ul>
+					</div>
+				<% end %>
+
 				<% if meth.tags(:optional).size > 0 %>
 					<div class="optional">
 						<h4>Optional Parameters</h4>

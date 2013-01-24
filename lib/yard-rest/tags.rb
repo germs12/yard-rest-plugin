@@ -14,3 +14,7 @@ YARD::Tags::Library.define_tag("Example Response Description",  :example_respons
 YARD::Tags::Library.define_tag("Response Fields",               :response_field,    :with_types_and_name)
 
 YARD::Tags::Library.define_tag("Headers",                       :header, :with_name)
+
+YARD::Tags::Library.define_tag("Caller",                        :caller)
+YARD::Tags::Library.define_tag("Features",                      :features)
+YARD::Tags::Library.define_tag("Consumers",                     :consumers)

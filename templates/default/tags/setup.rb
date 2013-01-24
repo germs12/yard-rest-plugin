@@ -9,7 +9,8 @@ def init
                         :example_response,
                         :response_field,
                         :header,
-                        :response_code])
+                        :response_code,
+                        :caller])
 end
 
 def request_field
@@ -34,6 +35,10 @@ end
 
 def response_code
   generic_tag :response_code
+end
+
+def caller
+  generic_tag :caller
 end
 
 def generic_tag(name, opts = {})
